@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = File
+Target = boot/Image
+
+[Action]
+Description = Update boot image
+When = PostTransaction
+Exec = /bin/sh /usr/bin/boot_update
+
